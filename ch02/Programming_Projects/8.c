@@ -1,3 +1,5 @@
+// Using less variables
+
 #include <stdio.h>
 
 int main(void){
@@ -11,14 +13,19 @@ int main(void){
 	printf("Enter monthly payment: ");
 	scanf("%f", &payment);
 
-	float monthly_rate = (rate/100)/12;
-	float first_payment = loan - payment;
-	float second_payment = (first_payment) * (1 + monthly_rate) - payment;
-	float third_payment = (second_payment) * (1 + monthly_rate) - payment;
+	float monthly_rate = (rate/100.f)/12.0f; //f at the end. if i decided to use float then its better to represent the value with floating point
 
-	printf("Balance remaining after first payment: $%.2f\n", first_payment);
-	printf("Balance remaining after second payment: $%.2f\n", second_payment);
-	printf("Balance remaining after third payment: $%.2f\n", third_payment);
+	// first month
+	loan = loan + (loan * monthly_rate) - payment;
+	printf("Balance remaining after first payment: $%.2f\n", loan);
+
+	// reflecting the value from first loan
+	loan = loan + (loan * monthly_rate) - payment;
+	printf("Balance remaining after second payment: $%.2f\n", loan);
+
+	// reflecting the vlaue from second loan
+	loan = loan + (loan * monthly_rate) - payment;
+	printf("Balance remaining after third payment: $%.2f\n", loan);
 
 	return 0;
 }
