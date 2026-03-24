@@ -10,9 +10,9 @@ int main(void){
     pi = (int *)10000;
     pd = (double *)10000;
 
-    printf(" pc = %u, pc+1 = %u, pc+2=%u\n", pc, pc+1, pc+2);
-    printf(" pi = %u, pi+1 = %u, pi+2=%u\n", pi, pi+1, pi+2);
-    printf(" pd = %u, pd+1 = %u, pd+2=%u\n", pd, pd+1, pd+2);
+    printf(" pc = %p, pc+1 = %p, pc+2=%p\n", pc, pc+1, pc+2);
+    printf(" pi = %p, pi+1 = %p, pi+2=%p\n", pi, pi+1, pi+2);
+    printf(" pd = %p, pd+1 = %p, pd+2=%p\n", pd, pd+1, pd+2);
 
     return 0;
 }
