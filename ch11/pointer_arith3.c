@@ -4,7 +4,6 @@
  * * Key Concepts:
  * 1. (char *)&data: Treats the address of an int as a sequence of bytes.
  * 2. *(pc + i): Moves 1 byte at a time to inspect the memory content.
- * 3. Little-Endian: The least significant byte (0x0D) is stored at the lowest address.
  */
 #include <stdio.h>
 
