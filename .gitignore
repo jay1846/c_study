@@ -1,0 +1,30 @@
+# === Compiled Binaries & Objects ===
+# Ignore object files and executable outputs
+*.o
+*.out
+*.exe
+test
+main
+a.out
+
+# === Build Directories ===
+# Ignore common build output folders
+build/
+bin/
+dist/
+
+# === OS Generated Files ===
+# System-specific files that don't belong in the repo
+.DS_Store
+Thumbs.db
+
+# === IDE & Environment Settings ===
+# Local editor settings and Docker-specific config
+.vscode/
+.devcontainer/
+.idea/
+*.log
+
+# === Temporary Files ===
+*.tmp
+*.swp
