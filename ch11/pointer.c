@@ -5,11 +5,11 @@ int main(void){
     int i = 3000;
     int *p = &i;
 
-    printf("%p\n", p);
-    printf("%p\n\n", &i);
+    printf("%p\n", p);              // address
+    printf("%p\n\n", &i);           // address
 
-    printf("%d\n", i);
-    printf("%d\n", *p);
+    printf("%d\n", i);              // value
+    printf("%d\n", *p);             // value
 
     return 0;
 }
