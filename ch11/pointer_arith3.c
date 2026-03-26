@@ -1,5 +1,4 @@
 /**
- * @file memory_inspection.c
  * @brief Understanding Endianness and Pointer Casting
  * * Key Concepts:
  * 1. (char *)&data: Treats the address of an int as a sequence of bytes.
