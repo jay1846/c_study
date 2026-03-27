@@ -12,7 +12,7 @@ int main(void){
     return 0;
 }
 
-void sub(int b[], int size){
+void sub(int b[], int size){        // we always have to limit the size of array. otherwise it cause Segmentation fault or other fatal bugs
     b[0] = 4;
     b[1] = 5;
     b[2] = 6;
