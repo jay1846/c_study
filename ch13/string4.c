@@ -3,12 +3,12 @@
 
 int main(void){
     char str[30] = "C language is easy";
-    int i = 0;
+    char *p = str;
 
-    while(str[i] != '\0'){
-        i++;
+    while(*p){
+        p++;
     }
-    printf("length of string \"%s\" is %d.\n", str, i);
+    printf("length of string %ld\n", p-str);
 
     return 0;
 }
