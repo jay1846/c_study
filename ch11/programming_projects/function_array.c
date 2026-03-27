@@ -10,11 +10,13 @@ int main(void){
 }
 
 double get_max(double *A, int size){
-    double max = A[0];
-    for(int i = 1; i < size; i++){
-        if(max < A[i]){
-            max = A[i];
+    double max = *A++;
+
+    while (--size > 0){
+        if (*A > max){
+            max = *A;
         }
+        A++;
     }
     return max;
 }
