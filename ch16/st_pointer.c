@@ -14,10 +14,10 @@ struct student {
 };
 
 int main(void){
-    struct date d = {3, 20, 2000};
+    struct date d = {3, 20, 2000};              // declare and initializing
     struct student s = {1, "Kim", 4.3};
 
-    s.dob = &d;
+    s.dob = &d;                         // put address of structure variable d in pointer variable dob which is a member of struct
 
     printf("ID: %d\n", s.number);
     printf("Name: %s\n", s.name);
